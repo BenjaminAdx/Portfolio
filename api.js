@@ -4,7 +4,7 @@ let cardsEl = document.querySelector(".cards")
 
 function editcard() {
     let inputEl = document.querySelector(".name_card");
-    fetch("https://db.ygoprodeck.com/api/v7/cardinfo.php?name=" + inputEl.value)
+    fetch("https://db.ygoprodeck.com/api/v7/cardinfo.php?fname=" + inputEl.value + "&language=fr")
         .then((response) => {
             return response.json();
         })
