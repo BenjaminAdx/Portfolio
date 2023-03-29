@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A propos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="index.html" class="name"><span class="ultra">ANDRIEUX Benjamin</span></a>
+            </div>
+            <div class="link_pages">
+                <a href="Apropos.html">A propos</a>
+                <a href="Réalisations.html">Réalisations</a>
+                <a href="#">Contact</a>
+                <a href="bonus.html">Bonus</a>
+            </div>
+            <div class="menu">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <figure class="car1fig"><img src="assets/images/Jaquette avec logo.png"
+                            alt="Image projet eternal-descent">
+                        <figcaption>Réalisation d'un site internet pour un faux jeux vidéo. <a
+                                href="https://benjaminadx.github.io/eternal_descent/" target="_blank"
+                                rel="noopener noreferrer"><i class="fa-solid fa-link"></i></a></figcaption>
+                    </figure>
+                </div>
+                <div class="swiper-slide">
+                    <figure class="car1fig"><img src="assets/images/Sélection_004.png" alt="Image todo-list">
+                        <figcaption>Réalisation d'une todo-list en PHP et mise en ligne. <a
+                                href="https://benjaminadx.github.io/eternal_descent/"><i
+                                    class="fa-solid fa-link"></i></a></figcaption>
+                    </figure>
+                </div>
+                <div class="swiper-slide">
+                    <figure class="car1fig"><img src="assets/images/Sélection_005.png"
+                            alt="Image présentation portfolio">
+                        <figcaption>Réalisation de ce portfolio avec appel à une API.</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+
+        const swiper = new Swiper('.swiper', {
+            effect: "cube",
+            grabCursor: true,
+            loop: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+    <script src="apli.js"></script>
+    <script src="https://kit.fontawesome.com/6d2ecce7eb.js" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
