@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A propos</title>
+    <title>Réalisations</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
@@ -19,7 +19,6 @@
             <div class="link_pages">
                 <a href="Apropos.html">A propos</a>
                 <a href="Réalisations.html">Réalisations</a>
-                <a href="#">Contact</a>
                 <a href="bonus.html">Bonus</a>
             </div>
             <div class="menu">
@@ -30,6 +29,7 @@
         </nav>
     </header>
     <main>
+        <h1>Mes Réalisations</h1>
         <div class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -43,7 +43,7 @@
                 <div class="swiper-slide">
                     <figure class="car1fig"><img src="assets/images/Sélection_004.png" alt="Image todo-list">
                         <figcaption>Réalisation d'une todo-list en PHP et mise en ligne. <a
-                                href="https://benjaminadx.github.io/eternal_descent/"><i
+                                href="https://andrieux.alwaysdata.net/todolist/" target="_blank"><i
                                     class="fa-solid fa-link"></i></a></figcaption>
                     </figure>
                 </div>
@@ -57,12 +57,20 @@
             <div class="swiper-pagination"></div>
 
         </div>
-        </div>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-    <script type="module">
-        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
 
+    </main>
+
+    <footer>
+        <span class="barre1"></span>
+        <a href="mailto:andrieux.benjamin1@gmail.fr" class="logo_footer"><img src="assets/icônes/envelope-solid.svg"
+                alt="logo enveloppe mail" class="mail"></a>
+        <a href="https://github.com/BenjaminAdx" class="logo_footer" target="_blank"><img src="assets/icônes/github.svg"
+                alt="logo github"></a>
+        <span class="barre2"></span>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="module">
         const swiper = new Swiper('.swiper', {
             effect: "cube",
             grabCursor: true,

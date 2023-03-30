@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A propos</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -18,7 +19,6 @@
             <div class="link_pages">
                 <a href="Apropos.html">A propos</a>
                 <a href="Réalisations.html">Réalisations</a>
-                <a href="#">Contact</a>
                 <a href="bonus.html">Bonus</a>
             </div>
             <div class="menu">
@@ -29,12 +29,84 @@
         </nav>
     </header>
     <main>
-        <div class="presentation">
-            <img src="" alt="photo">
+        <div class="presentation propos">
+            <figure><img src="assets/images/Sélection_003.png" alt="photo"></figure>
+            <div>
+                <p>Anciennement support technique dans l’aéronautique pendant une dizaine d’années, j’ai décidé de
+                    reconvertir en développeur web. Actuellement en formation DWWM à l’Afpa vous retrouverez ici un
+                    aperçu
+                    de mes projets effectués pendant le formation. Passioné par Yu-gi-oh comme certains s’en apercevront
+                    par
+                    la suite, j’aime également passé de bons moments derrière les fourneaux. Bonne découverte à tous.
+                </p><br>
+                <a href="assets/images/cv-andrieux-benjamin-dwwm.pdf" download="CV_Andrieux_benjamin.pdf"><i
+                        class="fa-solid fa-file-pdf"></i></a>
+            </div>
         </div>
 
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide logos">
+                    <img src="assets/icônes/html5.svg" />
+                </div>
+                <div class="swiper-slide logos">
+                    <img src="assets/icônes/css3-alt.svg" />
+                </div>
+                <div class="swiper-slide logos">
+                    <img src="assets/icônes/square-js.svg" />
+                </div>
+                <div class="swiper-slide logos">
+                    <img src="assets/icônes/database-solid.svg" />
+                </div>
+                <div class="swiper-slide logos">
+                    <img src="assets/icônes/php.svg" />
+                </div>
+                <div class="swiper-slide logos">
+                    <img src="assets/icônes/figma.svg" />
+                </div>
+                <div class="swiper-slide logos">
+                    <img src="assets/icônes/github.svg" />
+                </div>
+                <div class="swiper-slide logos">
+                    <img src="assets/icônes/linux.svg" />
+                </div>
+                <div class="swiper-slide logos">
+                    <img src="assets/icônes/windows.svg" />
+                </div>
+            </div>
+        </div>
     </main>
+
+    <footer><span class="barre1"></span>
+        <a href="mailto:andrieux.benjamin1@gmail.fr" class="logo_footer"><img src="assets/icônes/envelope-solid.svg"
+                alt="logo enveloppe mail" class="mail"></a>
+        <a href="https://github.com/BenjaminAdx" class="logo_footer" target="_blank"><img src="assets/icônes/github.svg"
+                alt="logo github"></a>
+        <span class="barre2"></span>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="apli.js"></script>
+    <script src="https://kit.fontawesome.com/6d2ecce7eb.js" crossorigin="anonymous"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            loop: true,
+            centeredSlides: true,
+            slidesPerView: "4",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false,
+            },
+            autoplay: {
+                delay: 500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
 
 </body>
 

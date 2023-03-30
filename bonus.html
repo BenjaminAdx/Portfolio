@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A propos</title>
+    <title>Bonus</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,8 +17,7 @@
             </div>
             <div class="link_pages">
                 <a href="Apropos.html">A propos</a>
-                <a href="#">Réalisations</a>
-                <a href="#">Contact</a>
+                <a href="Réalisations.html">Réalisations</a>
                 <a href="bonus.html">Bonus</a>
             </div>
             <div class="menu">
@@ -29,17 +28,30 @@
         </nav>
     </header>
     <main>
+        <h1>Cartes Yu-Gi-OH</h1>
         <div class="presentation">
-            <input type="text" class="name_card">
-            <input type="submit" value="valider" id="validate">
+            <label for="name_card">Veuillez rechercher par nom de carte Yu-Gi-OH (recherche effectué par mot compris
+                dans le nom de carte, exemple: magicien sombre, dragon blanc, ...)</label><br>
+            <input type="text" class="name_card" id="name_card" required><br>
+            <input type="submit" value="Rechercher" id="validate">
 
         </div>
 
-        <div class="presentation">
-            <div class="cards"></div>
-        </div>
+
+        <div class="cards"></div>
+
+
 
     </main>
+
+    <footer><span class="barre1"></span>
+        <a href="mailto:andrieux.benjamin1@gmail.fr" class="logo_footer"><img src="assets/icônes/envelope-solid.svg"
+                alt="logo enveloppe mail" class="mail"></a>
+        <a href="https://github.com/BenjaminAdx" class="logo_footer" target="_blank"><img src="assets/icônes/github.svg"
+                alt="logo github"></a>
+        <span class="barre2"></span>
+    </footer>
+
     <script src="apli.js"></script>
     <script src="api.js"></script>
 

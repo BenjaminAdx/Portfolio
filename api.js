@@ -10,7 +10,13 @@ function editcard() {
         })
         .then((datas) => {
             datas.data.forEach((res) => {
-                cardsEl.innerHTML += `<p>${res.name}`;
+                console.log(res.card_images)
+                cardsEl.innerHTML += `<div class="each_card">
+                <h2 class="name_card">${res.name}</h2>
+                <img class="img_card" src="${res.card_images[0].image_url}">
+                
+                <p class="card_desc">${res.desc}</p>
+                <span class="price1">Cardmarket: ${res.card_prices[0].cardmarket_price}$</span><span class="price2">TCGplayer: ${res.card_prices[0].tcgplayer_price}$</span></div>`;
             })
         })
 }

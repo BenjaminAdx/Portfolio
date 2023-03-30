@@ -23,7 +23,7 @@ body {
 header {
   width: 100%;
   height: 100px;
-  background: linear-gradient(180deg, #ffd700 0%, #000000 24%, #000000 100%);
+  background: linear-gradient(180deg, #ffd700 0%, #000000 5%, #000000 100%);
 }
 nav {
   display: flex;
@@ -50,6 +50,10 @@ a {
   color: #ffd700;
   text-decoration: none;
   border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 .name:hover {
   border-bottom: none;
@@ -95,6 +99,10 @@ a:hover {
   .span1on {
     transform: rotate(-45deg);
     transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
   }
   .span2on {
     display: none;
@@ -103,6 +111,10 @@ a:hover {
     transform: rotate(45deg);
     transition: 0.5s;
     margin-top: -5px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
   }
   .linksposition {
     position: absolute;
@@ -118,23 +130,54 @@ a:hover {
     align-items: center;
     transition: 0.5s;
     transition-timing-function: ease-in;
+    z-index: 10;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-filter: opacity(0.95);
   }
 }
 
+/* Footer */
+
+footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  background: linear-gradient(180deg, #000000 0%, #000000 95%, #ffd700 100%);
+}
+
+.barre1,
+.barre2 {
+  width: calc(50% - 65px);
+  height: 1px;
+  background: #ffd700;
+}
+
+.logo_footer img {
+  width: 20px;
+  height: 20px;
+  background: #ffd700;
+}
 /********************* Accueil *********************/
 
 /* main avec le texte principal page ACCUEIL*/
 
 main {
   width: 100%;
-  height: calc(100% - 100px);
+  min-height: calc(100% - 150px);
   background-image: url(/assets/images/font-hieroglyphe.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20px;
 }
 .presentation {
   border: 4px solid #ffd700;
@@ -145,6 +188,14 @@ main {
   width: fit-content;
   margin-left: 20px;
   margin-right: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .main1top {
   animation-name: accueil1;
@@ -183,6 +234,48 @@ main {
 
 /*************************A PROPOS****************************/
 
+.propos {
+  width: 70%;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.propos figure {
+  width: 200px;
+  height: 200px;
+}
+.propos div {
+  width: 60%;
+}
+
+.propos img {
+  width: 100%;
+  height: 100%;
+}
+
+.mySwiper {
+  width: 300px !important;
+  height: 30px !important;
+}
+
+.logos img {
+  width: 30px;
+  height: 30px;
+  background-color: #ffd700;
+}
+
+@media screen and (max-width: 850px) {
+  .propos figure {
+    width: 100px;
+    height: 100px;
+  }
+  .propos div {
+    width: 100%;
+  }
+}
+
 /*************************Réalisations*************************/
 
 .swiper {
@@ -203,7 +296,9 @@ main {
   height: 85%;
   object-fit: contain;
 }
-.car1fig a {
+.car1fig a,
+.propos a,
+.logo_footer:hover {
   outline: none;
 }
 .swiper-pagination {
@@ -215,4 +310,62 @@ main {
     width: 300px;
     height: 200px;
   }
+}
+
+/************************Bonus**************************/
+
+.cards {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Grid pour chaque carte */
+
+.each_card {
+  width: 250px;
+  height: 500px;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5% 60% 30% 5%;
+  grid-template-areas:
+    "n n"
+    "i i"
+    "de de"
+    "p1 p2";
+}
+
+.name_card {
+  grid-area: n;
+  font-size: 0.9rem;
+}
+
+.img_card {
+  grid-area: i;
+  width: 250px;
+  height: 100%;
+}
+.price1 {
+  grid-area: p1;
+  font-size: 0.8rem;
+}
+.price2 {
+  grid-area: p2;
+  font-size: 0.8rem;
+}
+.card_desc {
+  grid-area: de;
+  width: 250px;
+  font-size: 0.6rem;
+}
+.name_card,
+.img_card,
+.price1,
+.price2,
+.card_desc {
+  justify-self: center;
+  align-self: center;
 }
