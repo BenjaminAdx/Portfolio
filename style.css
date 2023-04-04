@@ -6,11 +6,11 @@
 
 @font-face {
   font-family: Ultra-Regular;
-  src: url(/assets/font/Ultra-Regular.ttf);
+  src: url(assets/font/Ultra-Regular.ttf);
 }
 @font-face {
   font-family: PTSerif-Regular;
-  src: url(/assets/font/PTSerif-Regular.ttf);
+  src: url(assets/font/PTSerif-Regular.ttf);
 }
 body {
   height: 100vh;
@@ -38,7 +38,7 @@ nav {
 }
 .name {
   color: #6d6d6d;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 .link_pages {
   display: flex;
@@ -46,7 +46,7 @@ nav {
 }
 a {
   font-family: PTSerif-Regular;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: #ffd700;
   text-decoration: none;
   border-radius: 10px;
@@ -148,7 +148,7 @@ footer {
   flex-direction: row;
   align-items: center;
   gap: 30px;
-  background: linear-gradient(180deg, #000000 0%, #000000 95%, #ffd700 100%);
+  background: #000000;
 }
 
 .barre1,
@@ -170,7 +170,7 @@ footer {
 main {
   width: 100%;
   min-height: calc(100% - 150px);
-  background-image: url(/assets/images/font-hieroglyphe.png);
+  background-image: url(assets/images/font-hieroglyphe.png);
   background-repeat: repeat;
   background-size: auto;
   display: flex;
@@ -201,16 +201,16 @@ main {
   animation-name: accueil1;
   animation-duration: 0.6s;
   animation-timing-function: ease-in-out;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 .main1middle {
   animation-name: accueil2;
   animation-duration: 1.2s;
   animation-timing-function: ease-in-out;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 .main1bottom {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   animation-name: accueil2;
   animation-duration: 1.8s;
   animation-timing-function: ease-in-out;
@@ -220,7 +220,7 @@ main {
     font-size: 0;
   }
   to {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 @keyframes accueil2 {
@@ -228,7 +228,7 @@ main {
     font-size: 0;
   }
   to {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -243,8 +243,8 @@ main {
 }
 
 .propos figure {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
 }
 .propos div {
   width: 60%;
@@ -255,21 +255,24 @@ main {
   height: 100%;
 }
 
+.propos p {
+  font-size: 1.5rem;
+}
 .mySwiper {
   width: 300px !important;
-  height: 30px !important;
+  height: 50px !important;
 }
 
 .logos img {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   background-color: #ffd700;
 }
 
 @media screen and (max-width: 850px) {
   .propos figure {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
   }
   .propos div {
     width: 100%;
@@ -279,8 +282,8 @@ main {
 /*************************Réalisations*************************/
 
 .swiper {
-  width: 600px;
-  height: 400px;
+  width: 800px;
+  height: 600px;
 }
 
 .car1fig {
@@ -301,14 +304,21 @@ main {
 .logo_footer:hover {
   outline: none;
 }
+figcaption {
+  font-size: 1.6rem;
+}
+
 .swiper-pagination {
   --swiper-pagination-color: #ffd700;
 }
 
 @media screen and (max-width: 850px) {
   .swiper {
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
+  }
+  figcaption {
+    font-size: 1.3rem;
   }
 }
 
@@ -323,10 +333,20 @@ main {
 }
 
 /* Grid pour chaque carte */
+h1 {
+  font-size: 2rem;
+}
 
+label {
+  font-size: 1.6rem;
+}
+
+input {
+  font-size: 1.6rem;
+}
 .each_card {
-  width: 250px;
-  height: 500px;
+  width: 350px;
+  height: 700px;
   display: grid;
 
   grid-template-columns: 1fr 1fr;
@@ -340,26 +360,26 @@ main {
 
 .name_card {
   grid-area: n;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .img_card {
   grid-area: i;
-  width: 250px;
+  width: 300px;
   height: 100%;
 }
 .price1 {
   grid-area: p1;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .price2 {
   grid-area: p2;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .card_desc {
   grid-area: de;
-  width: 250px;
-  font-size: 0.6rem;
+  width: 300px;
+  font-size: 0.8rem;
 }
 .name_card,
 .img_card,
